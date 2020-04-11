@@ -4,6 +4,7 @@ export (int) var speed = 200
 
 var velocity = Vector2()
 var player = 'p2 '
+# 
 
 func get_input():
 	velocity = Vector2()
