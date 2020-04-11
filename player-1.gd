@@ -3,17 +3,17 @@ extends KinematicBody2D
 export (int) var speed = 200
 
 var velocity = Vector2()
+var player = 'p1 '
 
 func get_input():
 	velocity = Vector2()
-	if Input.is_action_pressed('right'):
+	if Input.is_action_pressed(player + 'right'):
 		velocity.x += 1
-		velocity.x += 1
-	if Input.is_action_pressed('left'):
+	if Input.is_action_pressed(player + 'left'):
 		velocity.x -= 1
-	if Input.is_action_pressed('down'):
+	if Input.is_action_pressed(player + 'down'):
 		velocity.y += 1
-	if Input.is_action_pressed('up'):
+	if Input.is_action_pressed(player + 'up'):
 		velocity.y -= 1
 	if  velocity.length_squared() > 0:
 		$AnimatedSprite.play("run")
