@@ -657,7 +657,7 @@ animations = [ {
 "frames": [ ExtResource( 49 ), ExtResource( 50 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 61 ), ExtResource( 54 ), ExtResource( 60 ), ExtResource( 53 ), ExtResource( 62 ), ExtResource( 51 ), ExtResource( 47 ), ExtResource( 52 ), ExtResource( 48 ), ExtResource( 56 ), ExtResource( 55 ), ExtResource( 63 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 64 ), ExtResource( 68 ), ExtResource( 67 ), ExtResource( 25 ), ExtResource( 39 ), ExtResource( 18 ), ExtResource( 40 ), ExtResource( 10 ), ExtResource( 22 ), ExtResource( 7 ), ExtResource( 36 ), ExtResource( 13 ), ExtResource( 21 ), ExtResource( 14 ), ExtResource( 32 ), ExtResource( 27 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 37 ), ExtResource( 33 ), ExtResource( 19 ), ExtResource( 23 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 20 ), ExtResource( 34 ), ExtResource( 31 ), ExtResource( 38 ), ExtResource( 24 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 35 ), ExtResource( 30 ), ExtResource( 44 ), ExtResource( 46 ), ExtResource( 45 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 41 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 30.0
 } ]
 
 [node name="Node2D" type="Node2D"]
@@ -764,7 +764,7 @@ tile_data = PoolIntArray( -2097201, 0, 131077, -2097200, 0, 131077, -2097199, 0,
 
 [node name="penguin" type="KinematicBody2D" parent="."]
 position = Vector2( 200, 0 )
-scale = Vector2( 2, 2 )
+scale = Vector2( 1.6, 1.6 )
 z_index = 1
 script = ExtResource( 6 )
 speed = 500
@@ -773,6 +773,7 @@ speed = 500
 shape = SubResource( 116 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="penguin"]
+rotation = 3.14159
 frames = SubResource( 117 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
