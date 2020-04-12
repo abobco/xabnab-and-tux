@@ -16,8 +16,8 @@ func get_input():
 		velocity.y += 1
 	if Input.is_action_pressed(player + 'up'):
 		velocity.y -= 1
-#	if  velocity.length_squared() > 0:
-#		$AnimatedSprite.play("run")
+	if  velocity.length_squared() > 0:
+		$AnimatedSprite.play("default")
 #	else:
 #		$AnimatedSprite.play("stumble")
 		# $AnimatedSprite.frame = 0
