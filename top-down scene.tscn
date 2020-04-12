@@ -772,13 +772,8 @@ speed = 500
 [node name="CollisionShape2D" type="CollisionShape2D" parent="penguin"]
 shape = SubResource( 116 )
 
-<<<<<<< Updated upstream
-[node name="Sprite" type="Sprite" parent="penguin"]
-texture = ExtResource( 7 )
-=======
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
 frames = SubResource( 117 )
->>>>>>> Stashed changes
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 0.508362, -0.0231934 )
